@@ -17,4 +17,5 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = "login_page"
 login_manager.login_message_category = "info"
+app.app_context.push()
 from market import routes
